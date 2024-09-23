@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+
+\title{Side-by-Side Graphics using Subfigure}
+\author{Aniket Gupta}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This document demonstrates how to include side-by-side graphics using the subfigure concept in LaTeX. Below are two images displayed side-by-side using the \texttt{subfigure} package.
+
+\section{Graphics}
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{piggy dog.jpeg}
+        \caption{PIGGY DOG}
+        \label{fig:first}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{tiger.jpeg}
+        \caption{TIGER}
+        \label{fig:second}
+    \end{subfigure}
+    \caption{Side-by-Side Images}
+    \label{fig:side_by_side}
+\end{figure}
+
+\section{Conclusion}
+Using the \texttt{subfigure} package, you can easily place graphics or figures side by side in a LaTeX document, which is useful for comparative analysis or presenting multiple related images together.
+
+\end{document}
